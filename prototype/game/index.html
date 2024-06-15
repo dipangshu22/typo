@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Typo⌨️</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Keyboard Press Game⌨️</h1>
+  <div id="gameArea" class="area">
+    <p id="instruction">Press the button:</p>
+    <div id="targetKey"></div>
+    <button id="startButton" onclick="startGame()">Start Game</button>
+    <div id="timer">
+      Time Left: <span id="timeLeft">30</span> seconds
+      <input type="number" id="setTime" min="10" max="120" value="30" onchange="updateTime()">
+      <button onclick="updateTime()">Set Time</button>
+    </div>
+    <p id="score">Score: <span id="scoreValue">0</span></p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

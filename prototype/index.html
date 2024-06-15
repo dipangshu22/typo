@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typo⌨️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="default-theme">
+    <div class="navbar"><h1> <h1>Typo⌨️</h1></h1>
+        <div><button id="startButton" onclick="startTest()">Start</button>
+            <button onclick="resetTest()">Restart</button></div>
+        <div class="nav-item">
+            <label for="chapterSelect">Chapter:</label>
+            <select id="chapterSelect" class="chapter">
+                <option value="symbols">Symbols</option>
+                <option value="alphabets">Alphabets</option>
+                <option value="sentences">Sentences</option>
+                <option value="words">Words</option>
+                <option value="numbers">Numbers</option>
+            </select>
+        </div>
+        <div class="nav-item">
+            <label for="timeSelect">Time (minutes):</label>
+            <select id="timeSelect" class="time">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="nav-item">
+            <label for="themeSelect">Theme:</label>
+            <select id="themeSelect" onchange="changeTheme()" class="theme">
+                <option value="default">Default</option>
+                <option value="dark">Dark</option>
+                <option value="forest">Forest</option>
+                <option value="ocean">Ocean</option>
+                <option value="doodle1">Doodle 1</option>
+                <option value="doodle2">Doodle 2</option>
+                <option value="doodle3">Doodle 3</option>
+            </select>
+        </div>
+        <div class="game"><a href="./game/index.html">Game</a></div>
+       
+    </div>
+    <div class="container">
+       
+        <div id="quote"></div>
+        <textarea id="input" placeholder="Start typing..." oninput="checkTyping()" disabled></textarea>
+        <div id="result">
+            <p>Time left: <span id="timeLeft">0:00</span></p>
+            <p>Your typing speed is: <span id="wpm">0</span> WPM</p>
+            <p>Your accuracy is: <span id="accuracy">0</span>%</p>
+        </div>
+        
+    </div>
+    <h5>&copy; 2024 DDB</h4>
+    <script src="script.js"></script>
+</body>
+</html>

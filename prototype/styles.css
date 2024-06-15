@@ -1,0 +1,193 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    transition: background 3s;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar:hover{
+    box-shadow: 0px 2px 30px white;
+    transition: box-shadow 0.8s;
+
+}
+
+.nav-item {
+    margin: 0 10px;
+    width: auto;
+}
+
+.nav-item label, .nav-item select {
+    margin: 0 5px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1000px;
+    min-width: 300px;
+    margin-top: 120px;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-right: 50px;
+    font-style:oblique;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+h1:hover{
+    box-shadow: 4px 4px 8px rgb(244, 188, 82);
+    border-radius: 10px
+}
+
+label {
+    font-size: 16px;
+}
+
+select {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 16px;
+}
+.chapter{
+    border-radius: 15px;
+}
+.time{
+    border-radius: 15px;
+}
+.theme{
+    border-radius: 15px;
+}
+.chapter:hover{
+    background-color: #5b5c5b;
+    transition: background-color 0.2s;
+}
+.time:hover{
+    background-color: #5b5c5b;
+    transition: background-color 0.2s;
+}
+.theme:hover{
+    background-color: #5b5c5b;
+    transition: background-color 0.2s;
+}
+#quote {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-style:bold;
+    background-color: #f2efef;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+#input {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #232323;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.8s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #959798;
+}
+
+.correct {
+    color: rgb(109, 239, 109);
+}
+
+.incorrect {
+    color: red;
+}
+
+body.default-theme {
+    background-color: #f0f0f0;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme .container {
+    background: #444;
+}
+
+body.forest-theme {
+    background-color: #96d196;
+}
+
+body.ocean-theme {
+    background-color: #bad5f0;
+}
+
+body.doodle1-theme {
+    background: url('./assets/pic1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.doodle1-theme .container{
+    background: #7a7979;
+}
+
+body.doodle2-theme {
+    background: url('./assets/pic2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body.doodle2-theme .container{
+    background: #959798;
+}
+body.doodle3-theme {
+    background: url('./assets/pic3.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.game{
+    border: 2px solid rgb(150, 149, 149);
+    height: 20px;
+    border-radius: 5px;
+
+}
+.game a{
+    color: white;
+    font-style: italic;
+}
+.game:hover{
+    background-color: #444;
+}
